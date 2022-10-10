@@ -184,15 +184,15 @@
                     </div>
                 </div>
                 <div class="col-right">
-                    <form action="">
+                    <form action="" name="contact" method="POST" data-netlify="true">
                         <div class="form-input half">
-                            <input class="form-control" type="text" placeholder=" First name">
-                            <input class="form-control" type="text" placeholder=" Last name">
+                            <input class="form-control" type="text" name="Fname" placeholder=" First name">
+                            <input class="form-control" type="text" name="Lname" placeholder=" Last name">
 
                         </div>
                         <div class="form-input full">
-                            <input class="form-control" type="text" placeholder="Email">
-                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                            <input class="form-control" type="text" name="email" placeholder="Email">
+                            <textarea class="form-control" rows="6" name="message" placeholder="Message"></textarea>
                         </div>
                         <div class="form-input half">
                             <input class="form-control submit-btn" type="submit" value="Send message">
