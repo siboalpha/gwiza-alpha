@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
 </head>
 <body>
     <header class="navigation" id="nav">
@@ -26,7 +33,7 @@
                 </div>
                 <ul class="nav-list">
                     <li><a href="#top" class="scroll-link">Home</a></li>
-                    <li><a href="#brands" class="scroll-link">Brands</a></li>
+                    <li><a href="#partners" class="scroll-link">Partners</a></li>
                     <li><a href="#about" class="scroll-link">About Us</a></li>
                     <li><a href="#services" class="scroll-link">Our Services</a></li>
                     <li>
@@ -64,7 +71,7 @@
         </div>
     </section>
 
-    <section class="brands" id="brands">
+    <section class="brands" id="partners">
         <div class="container">
             <h4>Trusted by the top companies in this industry</h4>
             <div class="logos">
@@ -184,14 +191,15 @@
                     </div>
                 </div>
                 <div class="col-right">
-                    <form action="" name="contact" method="POST" data-netlify="true">
+                    <form action="" name="contact" method="POST">
                         <div class="form-input half">
-                            <input class="form-control" type="text" name="Fname" placeholder=" First name">
+                            <input type="hidden" name="contact_number">
+                            <input class="form-control" type="text" name="user_name" placeholder=" First name">
                             <input class="form-control" type="text" name="Lname" placeholder=" Last name">
 
                         </div>
                         <div class="form-input full">
-                            <input class="form-control" type="text" name="email" placeholder="Email">
+                            <input class="form-control" type="text" name="user_email" placeholder="Email">
                             <textarea class="form-control" rows="6" name="message" placeholder="Message"></textarea>
                         </div>
                         <div class="form-input half">
@@ -239,5 +247,6 @@
         </div>
     </footer>
     <script src="/js/nav.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
