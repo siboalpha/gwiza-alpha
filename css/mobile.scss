@@ -1,0 +1,124 @@
+$content-width: 1200px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$dark-color: #000000;
+$white: #ffffff;
+$primary-color: #d35f03;
+$secondary-color:#062b6d; 
+$border-radius: 8px;
+$whitesmoke: whitesmoke;
+$text-color: gray;
+$font-size: 17px;
+
+
+@media screen and (max-width: 799px) {
+    //UTILITY CLASSES
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+
+        .col-2 {
+            flex-direction: column;
+            .col-left {
+                width: 100%;
+            }
+            .col-right {
+                width: 100%;
+            }
+        }
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 150px 0 50px 0;
+        .container {
+            .col-2 {
+                flex-direction: column-reverse;
+                .col-right {
+                    width: 100%;
+                    img {
+                        height: 300px;
+                    }
+                }
+
+                .col-left {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    .about{
+        .container {
+            .col-2 {
+                .col-left {
+                    img {
+                        max-width: 100%;
+                        height: 300px;
+                    }
+
+                    &::after {
+                        right: -60px;
+                    }
+                }
+                .col-right {
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
+
+    //Services section
+
+    .services {
+        .container {
+            .services-desc {
+                margin: 0 5%;
+            }
+
+            .services-cards {
+                flex-direction: column;
+                .service {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    //Call to action
+
+    .call-to-action {
+        padding: 50px 20px;
+        .container {
+            padding: 40px
+        }
+    }
+
+    .contact {
+        text-align: center;
+
+        .col-2 {
+            flex-direction: column;
+            .col-left {
+                align-items: center;
+                .addresses {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
