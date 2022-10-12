@@ -13,13 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <!--Email-->
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
-            emailjs.init('YOUR_PUBLIC_KEY');
+            emailjs.init('TLOaItrIsnvuH-iIS');
         })();
     </script>
+
+
 </head>
 <body>
     <header class="navigation" id="nav">
@@ -45,19 +50,17 @@
         </div>
     </header>
 
-    <section class="hero" id="top">
+    <section class="hero appear" id="top">
         <div class="container">
             <div class="col-2">
                 <div class="col-left">
-                    <h5 class="sub-heading">Best financial services in Rwanda</h5>
+                    <h5 class="sub-heading">Welcome to GWIZA Alpha</h5>
                     <h1 class="heading">
-                        A small business is only as good as its tools.
+                        The best affordable financial advisor.
                     </h1>
 
                     <p class="v-propo">
-                        Value proposition Lorem Ipsum is simply dummy text of the 
-                        printing and typesetting industry. Lorem Ipsum has been the 
-                        industry's standard dummy text ever since the 1500s,
+                        Gwiza Alpha is a financial advisor with a mission to offer financial advisory services aiming to maximize future returns for businesses and high net worth individuals. 
                     </p>
                     <a href="">
                         <button>Get in touch</button>
@@ -93,12 +96,10 @@
 
                 <div class="col-right">
                     <h5 class="sub-heading">More about us</h5>
-                    <h1 class="heading">Gain more insight into how people use your</h1>
+                    <h1 class="heading">We care about your finances and the safety of your money</h1>
                     <p class="about-text">
-                        About text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        Value proposition Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        <br><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        We are a team of people with strong financial backgrounds. We are focused on providing financial management services and delivering key partnership to both individuals and institutional investors. We do support startups, corporates, MSMEs and High net worth individuals with a goal of growing their return over the long-term.
+                        As long as you work with us, we help you manage your funds, raise funds, and advise you on how best you can manage it. We also offer financial and risk management models to help improve your business and investment decision.
                     </p>
     
                     <a href=""><button>Get in touch</button></a>
@@ -115,25 +116,25 @@
             <div class="services-cards">
                 <div class="service">
                     <img class="service-img" src="/img/service1.svg" alt="">
-                    <h3 class="title">serivce title</h3>
+                    <h3 class="title">Venture Scout</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        description: We assist VC and PE firms in discovering outstanding founders and startups to invest in at the early stage, through our due diligence program based on the fund’s own investment criteria. We source potential deals for venture capital firms with a systematic vetting process of startups and founders.
                     </p>
                 </div>
 
                 <div class="service">
                     <img class="service-img" src="/img/service2.svg" alt="">
-                    <h3 class="title">serivce title</h3>
+                    <h3 class="title">Investment management</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        We support investment projects for individual and institutional investors. We offer services associated to project valuation, financial reporting and modeling, financial planning and analysis (including tax related services), capital allocation, portfolio analysis and risk management.
                     </p>
                 </div>
 
                 <div class="service">
                     <img class="service-img" src="/img/service3.svg" alt="">
-                    <h3 class="title">serivce title</h3>
+                    <h3 class="title">Business development</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        We assist startups and business in securing funding from investors by using our large network of investors and venture capitalists. Besides, we also provide business development services to early-stage startups such as business planning, talent acquisition, financial management and marketing.
                     </p>
                 </div>
             </div>
@@ -168,14 +169,14 @@
                         <div class="office">
                             <h3>Office</h3>
                             <p>
-                                Kigai Rwanda, Norrsken
+                                Kigali Rwanda, Norrsken
                             </p>
 
                         </div>
                         <div class="contacts">
                             <h3>Adresses</h3>
                             <div class="links">
-                                <a href=""><i class="fas fa-envelope-open-text"></i> <span> example@email.com</span></a>
+                                <a href="mailto:"><i class="fas fa-envelope-open-text"></i> <span> info@gwizalpha.com</span></a>
                                 <a href=""><i class="fas fa-phone-square-alt"></i> <span> +250 788 888 888</span></a>
                             </div>
                         </div>
@@ -184,26 +185,25 @@
                     <div class="socials">
                         <h3>Socials</h3>
                         <div class="links">
-                            <a href=""><i class="fab fa-facebook-f"></i> Like our page</a>
-                            <a href=""><i class="fab fa-instagram"></i> Follow us</a>
                             <a href=""><i class="fab fa-twitter"></i> Follow us</a>
+                            <a href=""><i class="fab fa-linkedin-in"></i> Follow us</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-right">
-                    <form action="" name="contact" method="POST">
+                    <form action="">
                         <div class="form-input half">
-                            <input type="hidden" name="contact_number">
-                            <input class="form-control" type="text" name="user_name" placeholder=" First name">
-                            <input class="form-control" type="text" name="Lname" placeholder=" Last name">
+                            <input type="hidden" id="contact_number">
+                            <input class="form-control" type="text" id="fname" name="user_name" placeholder=" First name">
+                            <input class="form-control" type="text" id="lname" name="Lname" placeholder=" Last name">
 
                         </div>
                         <div class="form-input full">
-                            <input class="form-control" type="text" name="user_email" placeholder="Email">
-                            <textarea class="form-control" rows="6" name="message" placeholder="Message"></textarea>
+                            <input class="form-control" type="text" id="email_id" name="user_email" placeholder="Email">
+                            <textarea class="form-control" rows="6" id="message" name="message" placeholder="Message"></textarea>
                         </div>
                         <div class="form-input half">
-                            <input class="form-control submit-btn" type="submit" value="Send message">
+                            <input onclick="sendEmail()" class="form-control submit-btn" type="submit" value="Send message">
                         </div>
                     </form>
                 </div>
@@ -237,9 +237,8 @@
     
                     <div class="col-right">
                         <div class="socials">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
