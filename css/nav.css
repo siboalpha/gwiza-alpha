@@ -89,6 +89,9 @@ nav ul li a::before {
 nav ul li a:hover::before {
   width: 70%;
 }
+nav ul li a:hover {
+  color: #d35f03;
+}
 nav ul li a:not(:only-child):after {
   padding-left: 4px;
   content: " ▾";

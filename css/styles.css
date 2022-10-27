@@ -176,11 +176,14 @@ form .half {
 .brands .container .logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 120px;
   row-gap: 20px;
   padding-top: 40px;
+}
+.brands .container .logos a img {
+  width: 120px;
 }
 
 .about {
@@ -364,6 +367,10 @@ footer .container .copy-rights .inner {
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+footer .container .copy-rights .inner .col-right .socials {
+  display: flex;
+  gap: 20px;
 }
 footer .container .copy-rights .inner .col-right .socials a i {
   font-size: 20px;

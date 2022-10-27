@@ -126,6 +126,10 @@ nav {
                     width: 70%;
                 }
 
+                &:hover {
+                    color: $primary-color;
+                }
+
                 &:not(:only-child):after {
                     padding-left: 4px;
                     content: ' ▾';
