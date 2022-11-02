@@ -19,6 +19,11 @@ from django.urls import path, include
 from core import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "Gwiza Alpha Admin"
+admin.site.site_title = "Gwiza Alpha Admin Portal"
+admin.site.index_title = "Welcome to Gwiza Alpha Portal"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('website.urls'))
